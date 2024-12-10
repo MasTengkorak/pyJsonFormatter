@@ -1,0 +1,68 @@
+This program is a robust and interactive JSON processing utility that handles multi-line input seamlessly. It combines two powerful JSON formatting capabilities into a single tool while addressing real-world usability issues.
+
+Purpose:
+This program is designed to:
+
+Convert multi-line, formatted JSON into a one-liner with escaped double quotes (\").
+Restore a one-liner JSON (with escaped quotes) into a human-readable, multi-line JSON format.
+Features:
+Multi-Line Input Support:
+
+Handles multi-line JSON input gracefully, allowing users to paste JSON directly from files or other sources.
+Uses an iterative approach to read lines of input until EOF (e.g., Ctrl+D or Ctrl+Z).
+Two Integrated Tasks:
+
+Task 1: Compresses formatted JSON into a compact one-line format with escaped quotes.
+Task 2: Expands a compact one-liner JSON back into a readable, pretty-printed format.
+Interactive and User-Friendly:
+
+Provides clear instructions for both tasks and input methods.
+Displays descriptive output for the selected task.
+JSON Validation:
+
+Ensures all input is valid JSON before processing.
+Detects and reports errors with informative messages to guide the user.
+Error Handling:
+
+Handles invalid JSON input and informs users of specific issues.
+Prevents crashes from malformed or incomplete data.
+How It Works:
+User Input:
+
+The user is prompted to choose between two tasks:
+Compress JSON into a one-liner with escaped quotes.
+Expand JSON from a one-liner to a multi-line format without escaped quotes.
+Accepts multi-line input until the user signals the end.
+Processing:
+
+Task 1:
+Validates the JSON.
+Converts it into a one-line string with double quotes escaped (\").
+Task 2:
+Removes escape characters (\) from the input.
+Validates the JSON.
+Formats the JSON with indentation for readability.
+Output:
+
+Provides a clear result based on the selected task.
+Example Use Cases:
+For Developers:
+
+Simplify JSON for embedding in code or configuration files.
+Debug or inspect compact JSON by expanding it into a readable format.
+For Data Analysts:
+
+Streamline JSON data for pipeline processing.
+Expand JSON logs for easier analysis.
+For System Administrators:
+
+Convert JSON data between formats to suit different systems or tools.
+Advantages:
+Handles Complex Input: Works with both single-line and multi-line JSON input.
+Interactive Design: Offers a simple menu-driven interface for easy operation.
+Reliable and Error-Free: Includes robust validation and error handling.
+Limitations:
+Relies on valid JSON input; does not correct structural errors in JSON data.
+Requires manual EOF signaling (Ctrl+D or Ctrl+Z) for multi-line input.
+Summary:
+The program is a versatile, user-friendly JSON tool tailored for developers, analysts, and administrators who frequently work with JSON data. Its multi-line input support and robust error handling make it reliable for real-world tasks, whether compressing JSON for efficiency or expanding it for clarity.
